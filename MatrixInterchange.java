@@ -15,6 +15,12 @@ public class MatrixInterchange {
                 arr[i][j] = scan.nextInt();
             }
         }
-        
+        System.out.println("The Matrix Is:");
+        for (int i = 0; i < nOfRows; i++) {
+            for (int j = 0; j < nOfColumns; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
