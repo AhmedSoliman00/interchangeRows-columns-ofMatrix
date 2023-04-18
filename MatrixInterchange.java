@@ -46,7 +46,27 @@ public class MatrixInterchange {
                         }
                         System.out.println();
                     }
-
+                    break;
+                case 2:
+                    System.out.println("Enter the row numbers:");
+                    int col1 = scan.nextInt(); // to Select columns you want to interchange
+                    int col2 = scan.nextInt();
+                    int temp2 = 0;
+                    for (int i = 0; i < nOfRows; i++) {
+                        temp2 = arr[col1 - 1][i];           // to interchange positions between columns
+                        arr[col1 - 1][i] = arr[col2 - 1][i];
+                        arr[col2 - 1][i] = temp2;
+                    }
+                    System.out.println("Matrix after interchanging row " + col1 + "with" + col2);
+                    for (int i = 0; i < nOfRows; i++) {
+                        for (int j = 0; j < nOfColumns; j++) {
+                            System.out.print(arr[i][j] + " ");
+                        }
+                        System.out.println();
+                    }
+                    break;
+                case 3:
+                    System.exit(0); // to exit the programme if choice = 3
             }
         }
     }
